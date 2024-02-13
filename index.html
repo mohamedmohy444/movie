@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie APP</title>
+    <link rel="shortcut icon" href="./ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="position-fixed bottom-0 top-0 d-flex justify-content-center z-3">
+        <div class="hiddden-nav bg-black d-flex flex-column justify-content-between">
+            <ul class="list-unstyled text-white p-4 links">
+                <li class="py-2 link1 link"> <a href="#" class="text-decoration-none text-white "
+                        onclick="nowPlayingfilms();">Now playing</a> </li>
+                <li class="py-2 link2 link"> <a href="#" class="text-decoration-none text-white"
+                        onclick="popularMovies();">Popular</a> </li>
+                <li class="py-2 link3 link"> <a href="#" class="text-decoration-none text-white"
+                        onclick="topRatedMovies();">Top Rated</a> </li>
+                <li class="py-2 link4 link"> <a href="#" class="text-decoration-none text-white"
+                        onclick="trendingMovies();">Trending</a> </li>
+                <li class="py-2 link5 link"> <a href="#" class="text-decoration-none text-white"
+                        onclick="upCamingMovies();">Upcoming</a> </li>
+                <li class="py-2 link6 link"> <a href="#Contact" class="text-decoration-none text-white">Contact Us</a>
+                </li>
+            </ul>
+            <div class="nav-footer p-3">
+                <div class="social p-3 text-white">
+                    <i class="px-1 fa-brands fa-facebook-f" style="cursor: pointer;"></i>
+                    <i class="px-1 fa-brands fa-twitter" style="cursor: pointer;"></i>
+                    <i class="px-1 fa-solid fa-globe mb-2" style="cursor: pointer;"></i>
+                </div>
+                <p class="text-secondary">Copyright © 2022 All Rights Reserved. <br> Created by <a href="#"
+                        class="text-decoration-none text-danger">Housam Ramadan</a></p>
+            </div>
+        </div>
+
+        <ul
+            class="list-unstyled h-100 py-4 visible-nav">
+            <li>
+                <img src="./logo.png" alt="tvision logo" class="logo">
+            </li>
+            <li style="cursor: pointer;" id="menu">
+                <i onclick="shownav()" class="fa-solid fa-bars fa-2x"></i>
+            </li>
+            <li class="icons">
+                <i class="fa-solid fa-globe mb-2" style="cursor: pointer;"></i>
+                <i class="fa-solid fa-share-nodes" style="cursor: pointer;"></i>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <div  class="search text-center">
+        <input class="w-50 mt-5" type="search" placeholder="Search" aria-label="Search" id="search">
+    </div>
+
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="buttontotop bg-black">
+        <i class="fa-solid fa-arrow-up text-light "></i>
+    </div>
+
+
+    <section id="Contact" class="my-5 ms-5">
+        <div class="contact container">
+            <h2 class="h3 text-light my-5">Contact US</h2>
+            <form>
+                <div class="row">
+                    <div class="inp-place col-6">
+                        <input type="text" value="" placeholder="Enter Your Name" class=" in-contact w-100" id="name"
+                            required>
+                        <p class="name-masege text-danger">
+
+                        </p>
+                    </div>
+                    <div class="inp-place col-6">
+                        <input type="email" value="" placeholder="Enter Your Email" class=" in-contact w-100" id="mail"
+                            required>
+                        <p class="mail-masege text-danger">
+
+                        </p>
+                    </div>
+                    <div class="inp-place col-6">
+                        <input type="text" placeholder="Enter Your Phone" class=" in-contact w-100" id="phone" required>
+                        <p class="phone-masege text-danger">
+
+                        </p>
+                    </div>
+                    <div class="inp-place col-6">
+                        <input type="text" placeholder="Enter Your Age" class=" in-contact w-100" id="age" required>
+                        <p class="age-masege text-danger">
+
+                        </p>
+                    </div>
+                    <div class="inp-place col-6">
+                        <input type="password" placeholder="Enter Your Passowrd" class=" in-contact w-100" id="pass"
+                            required>
+                        <p class="pass-masege text-danger">
+
+                        </p>
+                    </div>
+                    <div class="inp-place col-6">
+                        <input type="password" placeholder="Re-Enter Passowrd" class=" in-contact w-100" id="re-pass"
+                            required>
+                        <p class="repass-masege text-danger">
+
+                        </p>
+                    </div>
+
+                </div>
+                <button class="btn px-3 mainbutton" type="submit" >Submit</button>
+                <button class="btn px-3 alternativebutton d-none" type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
